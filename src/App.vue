@@ -9,16 +9,20 @@
     :page="pages[activePage]"
     ></PageViewer>
     
+    <Landing></Landing>
+    
 </template>
 
 <script lang="ts">
 import PageViewer from './components/PageViewer.vue';
 import Navbar from './components/Navbar.vue';
+import Landing from './components/Landing.vue';
 
 export default {
     components: {
         Navbar,
-        PageViewer
+        PageViewer,
+        Landing
     },
     data() {
         return {

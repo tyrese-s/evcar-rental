@@ -20,11 +20,11 @@
                     >{{ page.link.text }}</a> -->
                 </li>
             </ul>
-            <form class="d-flex">
+            <!-- <form class="d-flex">
                 <button class="btn btn-primary"
                 @click.prevent="changeTheme()"
-                >Toggle</button>
-            </form>
+                >Light/Dark</button>
+            </form> -->
         </div>
     </nav>
 
@@ -49,6 +49,7 @@ export default {
             if(this.theme = 'light') {
                 theme = 'dark'
             }
+            else{theme = 'light'}
 
             this.theme = theme
         }
