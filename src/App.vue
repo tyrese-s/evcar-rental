@@ -9,7 +9,8 @@
     :page="pages[activePage]"
     ></PageViewer>
     
-    <Landing></Landing>
+    <Landing/>
+    <Booking/>
     
 </template>
 
@@ -17,12 +18,14 @@
 import PageViewer from './components/PageViewer.vue';
 import Navbar from './components/Navbar.vue';
 import Landing from './components/Landing.vue';
+import Booking from './components/Booking.vue'
 
 export default {
     components: {
         Navbar,
         PageViewer,
-        Landing
+        Landing,
+        Booking
     },
     data() {
         return {
